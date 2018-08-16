@@ -1,0 +1,47 @@
+# Files not needed by Docker image/container #
+README.md
+venv/
+
+# to get rid of 
+# "WARNING: Do not use the development server in a production environment.
+# Use a production WSGI server instead." 
+# wsgi file was introduced for production env; 
+# for dev env can still use run.py to start 
+# flask web app for test runs
+run.py
+
+# ignore docker related files
+.dockerignore
+
+# ignore git related files
+.git/
+.gitignore
+
+# generated files
+bin/
+gen/
+.class
+target/
+*/__pycache__
+/__pycache__
+
+# Eclipse project files
+.classpath
+.settings
+.project
+.pydevproject
+
+# Intellij project files
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# OS generated files
+**/.DS_Store
+.DS_Store?
+.Trashes
+Thumbs.db
+*~
+.~*#
+.*.swp
