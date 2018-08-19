@@ -15,7 +15,7 @@ The role of the ***example Flask app*** (BasicFlaskApp) here is to have any mini
 
 #### LONG DESCRIPTION
 
-This project is for creating Docker image from which you could have Docker container consisting of:
+In other words, this project is for creating Docker image from which you could have Docker container consisting of:
 
 - Apache (running web server)
 
