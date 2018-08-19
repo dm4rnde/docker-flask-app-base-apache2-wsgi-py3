@@ -44,7 +44,7 @@ Clone project.
 `docker run -it -p 8888:80 <yourdockerid>/<yourimagename>:<yourimageversion>` 
 
 Verify that web app works. In browser, open: http://localhost:8888/. The webpage (of ***example Flask app***) should appear.
-
+<br>
 
 ### When using this project as a basis upon to build your own Flask web app
 
@@ -72,8 +72,8 @@ In browser, open: http://localhost:8888/. The webpage (of your Flask web app) sh
 
 <br>
 
-## Specifics
+## Notes
 
-Produced Docker image uses Ubuntu 18.04 as a base image.
+- Produced Docker image uses Ubuntu 18.04 as a base image.
 
-
+- Corresponding Docker image is uploaded to and can be found at Docker hub as: `dm4rnde/flask-app-base-apache2-wsgi-py3-ubuntu:0.1`
