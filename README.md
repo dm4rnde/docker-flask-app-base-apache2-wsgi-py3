@@ -37,41 +37,54 @@ This project is for creating Docker image from which you could have Docker conta
 
 ### Test run
 
-Clone project.
+1. Clone the project.
+<br>
+<br>
 
-`cd docker-flask-app-base-apache2-wsgi-py3`
+2. `cd docker-flask-app-base-apache2-wsgi-py3`
+<br>
+<br>
 
-`docker build -t <yourdockerid>/<yourimagename>:<yourimageversion> .`
+3. `docker build -t <yourdockerid>/<yourimagename>:<yourimageversion> .`
+<br>
+<br>
 
-`docker run -it -p 8888:80 <yourdockerid>/<yourimagename>:<yourimageversion>` 
+4. `docker run -it -p 8888:80 <yourdockerid>/<yourimagename>:<yourimageversion>` 
+<br>
+<br>
 
-Verify that web app works. In browser, open: http://localhost:8888/. The webpage (of ***example Flask app***) should appear.
+5. Verify that web app works. In browser, open: http://localhost:8888/. The webpage (of ***example Flask app***) should appear.
 
 <br>
 
 ### When using this project as a basis upon to build your own Flask web app
 
 
-Clone project.
+1. Clone the project.
+<br>
+<br>
 
-Create folder for your new project.
+2. Create folder for your new project.
+<br>
+<br>
 
-`cd <your project>`
+3. `cd <your project>`
+<br>
+<br>
 
-Copy contents of cloned project to your project.
-Rename all occurrences of words 'BasicFlaskApp', 'basicflaskapp', 'bafla' with names that relate to/reflect your project.
-Introduce your code/edits.
-
+4. Copy contents of cloned project to your project. Rename all occurrences of words 'BasicFlaskApp', 'basicflaskapp', 'bafla' with names that relate to/reflect your project. Introduce your code/edits.
+<br><br>
 Update requirements.txt, if needed (you might require different set of Python packages in you app; example on how to update: `pip3 freeze > requirements.txt`).
+<br>
+<br>
 
+5. Once ready, do the test run (create Docker image, run Docker container, verify that web app works):
 
-Once ready, do the test run (create Docker image, run Docker container, verify that web app works):
+   5.1. `docker build -t <yourdockerid>/<yourimagename>:<yourimageversion> .`
 
-`docker build -t <yourdockerid>/<yourimagename>:<yourimageversion> .`
+   5.2. `docker run -it -p 8888:80 <yourdockerid>/<yourimagename>:<yourimageversion>`
 
-`docker run -it -p 8888:80 <yourdockerid>/<yourimagename>:<yourimageversion>`
-
-In browser, open: http://localhost:8888/. The webpage (of your Flask web app) should appear.
+   5.3. In browser, open: http://localhost:8888/. The webpage (of your Flask web app) should appear.
 
 <br>
 
