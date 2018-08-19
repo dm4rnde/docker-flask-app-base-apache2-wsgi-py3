@@ -9,6 +9,7 @@ This project was created to be able to have Docker container that accommodates F
 
 Purpose of the ***example Flask app*** (BasicFlaskApp) is to be able to verify that all works.
 
+<br>
 
 #### LONG DESCRIPTION
 
@@ -22,6 +23,7 @@ This project is for creating Docker image from which you could have Docker conta
 
 - Flask app (set up with wsgi and Apache; and running)
 
+<br>
 
 **You could use this project:** 
 
