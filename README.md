@@ -38,20 +38,12 @@ This project is for creating Docker image from which you could have Docker conta
 ### Test run
 
 1. Clone the project.
-<br>
-<br>
 
 2. `cd docker-flask-app-base-apache2-wsgi-py3`
-<br>
-<br>
 
 3. `docker build -t <yourdockerid>/<yourimagename>:<yourimageversion> .`
-<br>
-<br>
 
 4. `docker run -it -p 8888:80 <yourdockerid>/<yourimagename>:<yourimageversion>` 
-<br>
-<br>
 
 5. Verify that web app works. In browser, open: http://localhost:8888/. The webpage (of ***example Flask app***) should appear.
 
@@ -61,22 +53,14 @@ This project is for creating Docker image from which you could have Docker conta
 
 
 1. Clone the project.
-<br>
-<br>
 
 2. Create folder for your new project.
-<br>
-<br>
 
 3. `cd <your project>`
-<br>
-<br>
 
 4. Copy contents of cloned project to your project. Rename all occurrences of words 'BasicFlaskApp', 'basicflaskapp', 'bafla' with names that relate to/reflect your project. Introduce your code/edits.
-<br><br>
+<br>
 Update requirements.txt, if needed (you might require different set of Python packages in you app; example on how to update: `pip3 freeze > requirements.txt`).
-<br>
-<br>
 
 5. Once ready, do the test run (create Docker image, run Docker container, verify that web app works):
 
