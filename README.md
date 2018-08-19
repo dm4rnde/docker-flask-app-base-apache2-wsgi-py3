@@ -60,7 +60,7 @@ This project is for creating Docker image from which you could have Docker conta
 
 4. Copy contents of cloned project to your project. Rename all occurrences of words 'BasicFlaskApp', 'basicflaskapp', 'bafla' with names that relate to/reflect your project. Introduce your code/edits.
 <br>
-   Update requirements.txt, if needed (you might require different set of Python packages in you app; example on how to update: `pip3 freeze > requirements.txt`).
+    Update requirements.txt, if needed (you might require different set of Python packages in you app; example on how to update: `pip3 freeze > requirements.txt`).
 
 5. Once ready, do the test run (create Docker image, run Docker container, verify that web app works):
 
