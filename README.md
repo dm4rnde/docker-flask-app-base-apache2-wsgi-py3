@@ -47,6 +47,8 @@ In other words, this project is for creating Docker image from which you could h
 
 4. Verify that web app works. In browser, open: http://localhost:8888/. The webpage (of ***example Flask app***) should appear.
 
+5. Stop the container created in step 3.
+
 <br>
 
 ### When using this project as a basis upon to build your own Flask web app
