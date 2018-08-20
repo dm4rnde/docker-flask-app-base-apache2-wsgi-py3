@@ -43,11 +43,9 @@ In other words, this project is for creating Docker image from which you could h
 
 2. `cd docker-flask-app-base-apache2-wsgi-py3`
 
-3. `docker build -t <yourdockerid>/<yourimagename>:<yourimageversion> .`
+3. `sh setup-docker.sh`
 
-4. `docker run -it -p 8888:80 <yourdockerid>/<yourimagename>:<yourimageversion>` 
-
-5. Verify that web app works. In browser, open: http://localhost:8888/. The webpage (of ***example Flask app***) should appear.
+4. Verify that web app works. In browser, open: http://localhost:8888/. The webpage (of ***example Flask app***) should appear.
 
 <br>
 
