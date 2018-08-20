@@ -66,9 +66,11 @@ In other words, this project is for creating Docker image from which you could h
 
    5.1. `docker build -t <yourdockerid>/<yourimagename>:<yourimageversion> .`
 
-   5.2. `docker run -it -p 8888:80 <yourdockerid>/<yourimagename>:<yourimageversion>`
+   5.2. `docker run -d -p 8888:80 <yourdockerid>/<yourimagename>:<yourimageversion>`
 
    5.3. In browser, open: http://localhost:8888/. The webpage (of your Flask web app) should appear.
+   
+   5.3. Stop the container created in step 5.2.
 
 <br>
 
