@@ -62,15 +62,17 @@ In other words, this project is for creating Docker image from which you could h
 
 4. Copy contents of cloned project to your project folder. Rename all occurrences of words 'BasicFlaskApp', 'basicflaskapp', 'bafla' with names that relate to/reflect your project. Introduce your code/edits. <br> Update requirements.txt, if needed (you might require different set of Python packages in your app; example on how to update: `pip3 freeze > requirements.txt`).
 
-5. Once ready, do the test run (create Docker image, run Docker container, verify that web app works):
+5. Once ready, do the test run (create Docker image, create isolated env (network), run Docker container, verify that web app works):
 
    5.1. `docker build -t <yourdockerid>/<yourimagename>:<yourimageversion> .`
 
-   5.2. `docker run -d -p 8888:80 <yourdockerid>/<yourimagename>:<yourimageversion>`
+   5.2. `docker network create <yourisolatednetworkname>`
 
-   5.3. In browser, open: http://localhost:8888/. The webpage (of your Flask web app) should appear.
+   5.3. `docker run -d --name <nameyourcontainer> --net <yourisolatednetworkname> -p 8888:80 <yourdockerid>/<yourimagename>:<yourimageversion>`
+
+   5.4. In browser, open: http://localhost:8888/. The webpage (of your Flask web app) should appear.
    
-   5.3. Stop the container created in step 5.2.
+   5.5. Stop the container created in step 5.3.
 
 <br>
 
