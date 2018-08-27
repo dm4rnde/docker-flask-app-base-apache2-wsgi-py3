@@ -41,11 +41,11 @@ In other words, this project is for creating Docker image from which you could h
 
 2. `cd docker-flask-app-base-apache2-wsgi-py3`
 
-3. `sh setup-docker.sh`
+3. `sh docker-setup.sh`
 
 4. Verify that web app works. In browser, open: http://localhost:8888/. The webpage (of ***example Flask app***) should appear.
 
-5. Stop and remove the container created in step 3.
+5. Once done: stop and remove the container and remove the image, created by step 3 (here, you could use run `sh docker-cleanup.sh` or other similar commands).
 
 <br>
 
