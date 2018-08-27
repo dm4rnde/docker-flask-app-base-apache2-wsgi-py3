@@ -35,7 +35,7 @@ In other words, this project is for creating Docker image from which you could h
 
 **You could use this project:** 
 
-- **As a base for your own Docker image / Flask app that have similar characteristics.**
+- **As a base for your own Docker image / Flask app that require similar characteristics (i.e. when starting from beginning). **
 
 - **As a learning material, when learning Docker.**
 
@@ -86,4 +86,4 @@ In other words, this project is for creating Docker image from which you could h
 
 - Produced Docker image uses Ubuntu 18.04 as a base image.
 
-- **Corresponding Docker image has been uploaded to, and can be found at, Docker Hub (hub.docker.com) as:** `dm4rnde/flask-app-base-apache2-wsgi-py3-ubuntu:0.1`
+- **Latest Docker image has been uploaded to, and can be found at, Docker Hub (hub.docker.com) as:** `dm4rnde/flask-app-base-apache2-wsgi-py3-ubuntu:0.2`
