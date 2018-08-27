@@ -49,11 +49,11 @@ In other words, this project is for creating Docker image from which you could h
 
 2. `cd docker-flask-app-base-apache2-wsgi-py3`
 
-3. `sh docker-setup.sh`
+3. Open docker-setup.sh and replace all occurrences of 'writeyourdockeridhere' with your docker id. Then run `sh docker-setup.sh`.
 
 4. Verify that web app works. In browser, open: http://localhost:8888/. The webpage (of ***example Flask app***) should appear.
 
-5. To clean up run `sh docker-cleanup.sh`. 
+5. Cleaning up. Open docker-cleanup.sh and replace all occurrences of 'writeyourdockeridhere' with your docker id. Then run `sh docker-cleanup.sh`. 
 
 <br>
 
