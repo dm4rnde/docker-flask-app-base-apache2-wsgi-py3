@@ -45,7 +45,7 @@ In other words, this project is for creating Docker image from which you could h
 
 4. Verify that web app works. In browser, open: http://localhost:8888/. The webpage (of ***example Flask app***) should appear.
 
-5. Once done: stop and remove the container and remove the image, created by step 3 (here, you could use run `sh docker-cleanup.sh` or other similar commands).
+5. To clean up run `sh docker-cleanup.sh`. 
 
 <br>
 
@@ -70,7 +70,7 @@ In other words, this project is for creating Docker image from which you could h
 
    5.4. In browser, open: http://localhost:8888/. The webpage (of your Flask web app) should appear.
    
-   5.5. Stop and remove the container created in step 5.3.
+   5.5. Cleaning up. Stop and remove the container created in step 5.3. Remove the network created in step 5.2. 
 
 <br>
 
