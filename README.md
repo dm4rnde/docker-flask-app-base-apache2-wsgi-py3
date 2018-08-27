@@ -7,7 +7,7 @@
 
 This project was created to be able to have Docker container that accommodates Flask app (here, ***example Flask app***) which relies on apache2/wsgi/py3.
 
-The role of the ***example Flask app*** (BasicFlaskApp) here is to have any minimal flask app to verify that all works.
+The role of the ***example Flask app*** (BasicFlaskApp) here is to verify that all works. It is minimal Flask app. It can be replaced with other Flask app.
 
 <br>
 

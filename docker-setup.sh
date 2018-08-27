@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# build an image
+# build image
 docker build -t dm4rnde/flask-app-base-apache2-wsgi-py3-ubuntu:0.1 .
 
 # create network (isolated env)
