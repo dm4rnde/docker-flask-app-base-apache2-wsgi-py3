@@ -35,7 +35,7 @@ In other words, this project is for creating Docker image from which you could h
 
 **You could use this project:** 
 
-- **As a base for your own Docker image / Flask app that require similar characteristics (i.e. when starting from beginning).**
+- **As a base for your own Docker image / Flask app that require similar characteristics (i.e., when starting new project from beginning).**
 
 - **As a learning material, when learning Docker.**
 
