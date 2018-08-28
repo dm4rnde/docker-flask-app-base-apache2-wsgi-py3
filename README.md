@@ -4,37 +4,36 @@
 # Flask(-Apache2-wsgi-Python3-Ubuntu) Docker container
 
 
-This project was created to be able to have Docker container that accommodates Flask app (here, ***example Flask app***) which relies on apache2/wsgi/py3.
+This project (https://github.com/dm4rnde/docker-flask-app-base-apache2-wsgi-py3) was created to be able to have Docker container that accommodates Flask app (here, ***example Flask app***) which relies on apache2/wsgi/py3.
+
+
+In other words, it is a Docker container consisting of:
+
+- Apache (running web server);
+
+- wsgi support configured on Apache;
+
+- python3 and pip3 set up;
+
+- Flask app (set up with wsgi and Apache; and running).
+
 
 ***Example Flask app***:
 
 - is named BasicFlaskApp here;
 
-- its role is only to verify that all works;
+- its role is only to help to verify that all works;
 
 - it is a minimal Flask app;
 
 - as there is not much content, it can be easily replaced with some other Flask app.
 
 
-#### LONG DESCRIPTION
+**This project could be used, for example:** 
 
-In other words, this project is for creating Docker image from which you could have Docker container consisting of:
+- **As a base for your own Flask project that require similar characteristics (i.e., when starting new project from beginning).**
 
-- Apache (running web server)
-
-- wsgi support configured on Apache
-
-- python3 and pip3 set up
-
-- Flask app (set up with wsgi and Apache; and running)
-
-
-**You could use this project:** 
-
-- **As a base for your own Docker image / Flask app that require similar characteristics (i.e., when starting new project from beginning).**
-
-- **As a learning material, when learning Docker.**
+- **As a learning material for learning Docker.**
 
 
 ## Running
