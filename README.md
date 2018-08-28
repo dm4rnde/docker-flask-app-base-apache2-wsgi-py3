@@ -86,4 +86,4 @@ In other words, this project is for creating Docker image from which you could h
 
 - Produced Docker image uses Ubuntu 18.04 as a base image.
 
-- **Corresponding Docker image has been also uploaded to, and can be found at, Docker Hub (hub.docker.com) as:** `dm4rnde/flask-app-base-apache2-wsgi-py3-ubuntu:0.2`
+- **Corresponding Docker images can be found at Docker Hub (hub.docker.com), under repository:** `dm4rnde/flask-app-base-apache2-wsgi-py3-ubuntu`
