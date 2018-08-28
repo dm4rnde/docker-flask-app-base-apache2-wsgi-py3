@@ -53,4 +53,17 @@ EXPOSE 80 443
 
 RUN apt-get clean
 
+ARG BUILD_DATE
+ARG VCS_REF
+ARG VERSION
+
+LABEL org.label-schema.build-date=$BUILD_DATE \
+      org.label-schema.version=$VERSION \
+      org.label-schema.license="MIT" \
+      org.label-schema.name="Docker image with flask app base (using apache2, wsgi, py3, ubuntu)" \
+      org.label-schema.description="Docker image to create docker container from, that accommodates Flask web app which relies on Apache 2, wsgi, Python 3, and Ubuntu." \
+      org.label-schema.vcs-ref=$VCS_REF \
+      org.label-schema.vcs-url="https://github.com/dm4rnde/docker-flask-app-base-apache2-wsgi-py3" \
+      org.label-schema.docker.schema-version="1.0"
+
 ENTRYPOINT ["/bin/bash", "/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
