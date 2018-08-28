@@ -1,11 +1,8 @@
 
 [![](https://images.microbadger.com/badges/image/dm4rnde/flask-app-base-apache2-wsgi-py3-ubuntu.svg)](http://microbadger.com/images/dm4rnde/flask-app-base-apache2-wsgi-py3-ubuntu "Image Layers") [![](https://images.microbadger.com/badges/version/dm4rnde/flask-app-base-apache2-wsgi-py3-ubuntu.svg)](http://microbadger.com/images/dm4rnde/flask-app-base-apache2-wsgi-py3-ubuntu "Image Version") [![](https://images.microbadger.com/badges/license/dm4rnde/flask-app-base-apache2-wsgi-py3-ubuntu.svg)](https://microbadger.com/images/dm4rnde/flask-app-base-apache2-wsgi-py3-ubuntu "Image License")  [![](https://images.microbadger.com/badges/commit/dm4rnde/flask-app-base-apache2-wsgi-py3-ubuntu.svg)](https://github.com/dm4rnde/docker-flask-app-base-apache2-wsgi-py3 "Image Commit")
 
-<br>
-
 # Flask(-Apache2-wsgi-Python3-Ubuntu) Docker container
 
-<br>
 
 This project was created to be able to have Docker container that accommodates Flask app (here, ***example Flask app***) which relies on apache2/wsgi/py3.
 
@@ -19,7 +16,6 @@ This project was created to be able to have Docker container that accommodates F
 
 - as there is not much content, it can be easily replaced with some other Flask app.
 
-<br>
 
 #### LONG DESCRIPTION
 
@@ -33,7 +29,6 @@ In other words, this project is for creating Docker image from which you could h
 
 - Flask app (set up with wsgi and Apache; and running)
 
-<br>
 
 **You could use this project:** 
 
@@ -41,7 +36,6 @@ In other words, this project is for creating Docker image from which you could h
 
 - **As a learning material, when learning Docker.**
 
-<br>
 
 ## Running
 
@@ -57,7 +51,6 @@ In other words, this project is for creating Docker image from which you could h
 
 5. Cleaning up. Open docker-cleanup.sh and replace all occurrences of 'writeyourdockeridhere' with your docker id. Then run `sh docker-cleanup.sh`. 
 
-<br>
 
 ### When using this project as a basis upon to build your own Flask web app
 
@@ -82,7 +75,6 @@ In other words, this project is for creating Docker image from which you could h
    
    5.5. Cleaning up. Stop and remove the container created in step 5.3. Remove the network created in step 5.2. 
 
-<br>
 
 ## Notes
 

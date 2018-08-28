@@ -1,0 +1,12 @@
+----To remind of setup----
+Once code is pushed to github,
+service set up under repository at github will notify the docker hub;
+Docker hub will start auto build (result: new built image),
+and once ready will notify microbadger.com to update its info
+(result: badgers info displayed by README.md at github show up-to-date details).
+
+  
+PS! Every commit triggers autobuild at docker hub;
+every finished build triggers update request to microbadger.com.
+PS! Without updating related info at microbadger.com, badges info given 
+at the top of README.md would be outdated/wrong.
