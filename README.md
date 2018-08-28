@@ -24,14 +24,14 @@ In other words, result is a Docker container consisting of:
 
 - its role is just to help to verify that all works;
 
-- as there is not much content, it could be easily replaced with some other Flask app.
+- as it does not have much content, it could be easily replaced with some other Flask app.
 
 
 **This project could be used, for example:** 
 
 - **As a base for your own Flask project that require similar characteristics (i.e., when starting new project from beginning).**
 
-- **As a learning material for learning Docker.**
+- **As a learning material when learning Docker.**
 
 
 ## Running
