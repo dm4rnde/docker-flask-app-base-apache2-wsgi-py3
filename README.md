@@ -31,12 +31,12 @@ In other words, result is a Docker container consisting of:
 
 - **As a base for your own Flask project that require similar characteristics (i.e., when starting new project from beginning).**
 
-- **As a learning material when learning Docker.**
+- **As additional learning material when learning Docker.**
 
 
 ## Running
 
-### Test run
+### Test run (from code)
 
 1. Clone the project.
 
