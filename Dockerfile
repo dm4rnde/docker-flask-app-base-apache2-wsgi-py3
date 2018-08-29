@@ -9,7 +9,7 @@ COPY . /var/www/BasicFlaskApp
 
 RUN cd /usr/local/bin ; ln -s /usr/bin/python3 python
 
-# need to get up to date pip
+# Need to get up to date pip
 RUN apt-get install -y wget --no-install-recommends
 RUN adduser --system --group --disabled-login bflaskappuser ; cd /home/bflaskappuser/
 RUN apt-get update -y ; apt-get upgrade -y
@@ -32,10 +32,10 @@ RUN rm -rf /var/www/BasicFlaskApp/BasicFlaskApp.conf
 RUN rm -rf /var/www/BasicFlaskApp/Dockerfile
 RUN rm -rf /var/www/BasicFlaskApp/requirements.txt
 
-#once ServerName is known, need to remove following
-#line (it sets 'ServerName' directive globally)
-#and have ServerName in related conf file(s) (under 
-#sites-available, inside the VirtualHost section)
+# Once ServerName is known, need to remove following
+# line (it sets 'ServerName' directive globally)
+# and have ServerName in related conf file(s) (under 
+# sites-available, inside the VirtualHost section)
 RUN echo 'ServerName localhost' >> /etc/apache2/apache2.conf
  
 RUN service apache2 start
@@ -53,6 +53,18 @@ EXPOSE 80 443
 
 RUN apt-get clean
 
+# To get following arguments filled
+# a) if you build an image manually 
+#  then set arguments when building docker image;
+#  example:
+#  docker build \
+#  --build-arg BUILD_DATE=`date -u +"%Y-%m-%dT%H:%M:%SZ"` \
+#  --build-arg VCS_REF=`git rev-parse --short HEAD` \
+#  --build-arg VERSION="latest" \
+#  -t dm4rnde/flask-app-base-apache2-wsgi-py3-ubuntu .
+# b) if you let Docker Hub registry do the autobuild 
+#  then specify build command with arguments in hooks/build
+#
 ARG BUILD_DATE
 ARG VCS_REF
 ARG VERSION
