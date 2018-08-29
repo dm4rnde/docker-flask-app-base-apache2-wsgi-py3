@@ -77,4 +77,6 @@ In other words, result is a Docker container consisting of:
 
 - Produced Docker image uses Ubuntu 18.04 as a base image.
 
+- Though not paramount, attempts to have as minimal image (size) as possible.
+
 - **Corresponding Docker images can be found at Docker Hub (hub.docker.com), under repository:** `dm4rnde/flask-app-base-apache2-wsgi-py3-ubuntu`
