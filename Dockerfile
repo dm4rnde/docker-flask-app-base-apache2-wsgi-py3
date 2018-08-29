@@ -54,8 +54,7 @@ EXPOSE 80 443
 RUN apt-get clean
 
 # To get following arguments filled
-# a) if you build an image manually 
-#  then set arguments when building docker image;
+# a) if you build an image manually then set the arguments
 #  example:
 #  docker build \
 #  --build-arg BUILD_DATE=`date -u +"%Y-%m-%dT%H:%M:%SZ"` \
