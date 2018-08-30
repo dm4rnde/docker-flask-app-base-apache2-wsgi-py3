@@ -19,7 +19,7 @@ In other words, from this image Docker container could be created that will have
 
 To verify that all works, ***Example Flask app*** (named BasicFlaskApp here) is used.
 
-***Example Flask app** here:
+***Example Flask app*** here:
 
 - is a minimal Flask app;
 
