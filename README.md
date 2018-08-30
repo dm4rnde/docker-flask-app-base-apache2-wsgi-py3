@@ -74,8 +74,8 @@ To verify that all works, ***example Flask app*** (named BasicFlaskApp here) is 
 
 ## Notes
 
-- Produced Docker image uses Ubuntu 18.04 as a base image.
+- Uses Ubuntu 18.04 as a base image.
 
 - Though not paramount, attempts to have as minimal image (size) as possible.
 
-- **Corresponding Docker images can be found at Docker Hub (hub.docker.com), under repository:** `dm4rnde/flask-app-base-apache2-wsgi-py3-ubuntu`
+- **Corresponding Docker images can be also pulled from Docker Hub (hub.docker.com):** `dm4rnde/flask-app-base-apache2-wsgi-py3-ubuntu`
