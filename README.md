@@ -1,13 +1,12 @@
 
 [![](https://images.microbadger.com/badges/license/dm4rnde/flask-app-base-apache2-wsgi-py3-ubuntu.svg)](https://microbadger.com/images/dm4rnde/flask-app-base-apache2-wsgi-py3-ubuntu "Image License") [![](https://images.microbadger.com/badges/image/dm4rnde/flask-app-base-apache2-wsgi-py3-ubuntu.svg)](http://microbadger.com/images/dm4rnde/flask-app-base-apache2-wsgi-py3-ubuntu "Image Layers") [![](https://images.microbadger.com/badges/version/dm4rnde/flask-app-base-apache2-wsgi-py3-ubuntu.svg)](http://microbadger.com/images/dm4rnde/flask-app-base-apache2-wsgi-py3-ubuntu "Image Version") [![](https://images.microbadger.com/badges/commit/dm4rnde/flask-app-base-apache2-wsgi-py3-ubuntu.svg)](https://github.com/dm4rnde/docker-flask-app-base-apache2-wsgi-py3 "Image Commit") [![Docker Badge](https://img.shields.io/docker/build/dm4rnde/flask-app-base-apache2-wsgi-py3-ubuntu.svg)](https://hub.docker.com/r/dm4rnde/flask-app-base-apache2-wsgi-py3-ubuntu/builds/)
 
-# Flask(-Apache2-wsgi-Python3-Ubuntu) Docker container
+# Flask(-Apache2-wsgi-Python3-Ubuntu) Docker image
 
 
-This project (https://github.com/dm4rnde/docker-flask-app-base-apache2-wsgi-py3) was created to have a Docker container that accommodates Flask app (here, ***example Flask app***) which relies on apache2/wsgi/py3.
+To accommodate Flask app, with focus to run Flask app on Apache 2 (while wsgi, python 3 are also important).
 
-
-In other words, result is a Docker container consisting of:
+In other words, from this image Docker container could be created that will have:
 
 - Apache (running web server);
 
@@ -18,11 +17,11 @@ In other words, result is a Docker container consisting of:
 - Flask app (set up with wsgi and Apache; and running).
 
 
-***Example Flask app*** (named BasicFlaskApp here);
+To verify that all works, ***Example Flask app*** (named BasicFlaskApp here) is used.
+
+***Example Flask app** here:
 
 - is a minimal Flask app;
-
-- its role is just to help to verify that all works;
 
 - as it does not have much content, it could be easily replaced with some other Flask app.
 

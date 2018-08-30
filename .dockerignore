@@ -12,6 +12,7 @@ run.py
 
 # ignore docker related files
 .dockerignore
+hooks/
 
 # ignore git related files
 .git/
