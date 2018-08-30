@@ -12,7 +12,10 @@ run.py
 
 # ignore docker related files
 .dockerignore
+docker-cleanup.sh
+docker-setup.sh
 hooks/
+note_build.txt
 
 # ignore git related files
 .git/
