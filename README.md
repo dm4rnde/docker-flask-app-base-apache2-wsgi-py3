@@ -4,7 +4,7 @@
 # Flask(-Apache2-wsgi-Python3-Ubuntu) Docker image
 
 
-To accommodate Flask app, with focus to run Flask app on Apache 2 (while wsgi, Python 3 are also important).
+To accommodate Flask app, with focus to run that Flask app on Apache 2 (while wsgi, Python 3 are also important).
 
 In other words, from this image Docker container could be created that will have:
 
