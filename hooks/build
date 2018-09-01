@@ -1,5 +1,15 @@
 #!/bin/bash
 
+# this file is for hub.docker.com
+# in order to do 'automatic build'
+# of corresponding image located there
+
+docker build \
+--build-arg BUILD_DATE=`date -u +"%Y-%m-%dT%H:%M:%SZ"` \
+--build-arg VCS_REF=`git rev-parse --short HEAD` \
+--build-arg VERSION=$DOCKER_TAG \
+-t $IMAGE_NAME .
+
 #experiment
 #
 #docker-compose build \
@@ -8,9 +18,3 @@
 #--build-arg VERSION=$DOCKER_TAG
 #
 #
-
-docker build \
---build-arg BUILD_DATE=`date -u +"%Y-%m-%dT%H:%M:%SZ"` \
---build-arg VCS_REF=`git rev-parse --short HEAD` \
---build-arg VERSION=$DOCKER_TAG \
--t $IMAGE_NAME .

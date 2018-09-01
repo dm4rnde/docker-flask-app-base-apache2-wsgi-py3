@@ -10,7 +10,7 @@ services:
     build: 
       context: .
       args:
-        - BUILD_DATE=${{date -u +"%Y-%m-%dT%H:%M:%SZ"}}
+        - BUILD_DATE=${BUILD_DATE}
         - VCS_REF=${VCS_REF}
         - VERSION=${VERSION}
     ports:
