@@ -5,7 +5,7 @@
 
 Environment set up to run Flask app, while Flask app uses Apache 2 (while wsgi, Python 3 are also important).
 
-In other words, from this image Docker container can be created that will have:
+In other words, resulting Docker container, created from this image, would have:
 
 - Apache (running web server);
 
