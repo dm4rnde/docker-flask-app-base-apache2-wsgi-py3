@@ -11,3 +11,16 @@ PS! Every commit triggers autobuild at docker hub;
 every finished build triggers update request to microbadger.com.
 PS! Without updating related info at microbadger.com, badges info given 
 at the top of README.md would be outdated/wrong.
+
+
+----Manual build (example)
+#begin state
+docker images ; docker ps -a ; docker network ls
+#start
+docker pull dm4rnde/flask-app-base-apache2-wsgi-py3-ubuntu:latest ; docker network create bflaskapp-netw ; docker run -d --rm --name bflaskapp --net bflaskapp-netw -p 8888:80 dm4rnde/flask-app-base-apache2-wsgi-py3-ubuntu:latest
+#verify 
+curl http://localhost:8888
+#end, cleanup
+docker stop $(docker ps -a | grep "flask-app-base-apache2-wsgi-py3-ubuntu:latest" | awk '{ print $1}') ; docker network rm bflaskapp-netw ; docker rmi dm4rnde/flask-app-base-apache2-wsgi-py3-ubuntu:latest
+#end state
+docker images ; docker ps -a ; docker network ls
