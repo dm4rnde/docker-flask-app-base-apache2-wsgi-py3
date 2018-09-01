@@ -3,14 +3,13 @@
 
 # Flask(-Apache2-wsgi-Python3-Ubuntu) Docker image
 
+Environment set up to run Flask app, while Flask app uses Apache 2 (while wsgi, Python 3 are also important).
 
-To accommodate Flask app, with focus to run that Flask app on Apache 2 (while wsgi, Python 3 are also important).
-
-In other words, from this image Docker container could be created that will have:
+In other words, from this image Docker container can be created that will have:
 
 - Apache (running web server);
 
-- wsgi support configured on Apache;
+- wsgi configured on Apache;
 
 - python3 and pip3 set up;
 
@@ -20,26 +19,28 @@ In other words, from this image Docker container could be created that will have
 To verify that all works, minimal ***example Flask app*** (named BasicFlaskApp here) is used. As it does not have much content it could be easily replaced with some other Flask app.
 
 
-**This project could be used, for example:** 
+This project could be used, for example:
 
-- **As a base for your own Flask project that require similar characteristics (i.e., when starting new project from beginning).**
+- As a base for your (or for bootstrapping) Flask project that require similar characteristics (i.e., starting fresh project from beginning).
 
-- **As additional learning material when learning Docker.**
+- As additional learning material when learning Docker.
 
 
-## Running
+## Running (from code)
 
-### Test run (from code)
+### Test run
 
 1. Clone the project.
 
 2. `cd docker-flask-app-base-apache2-wsgi-py3`
 
-3. Open docker-setup.sh and replace all occurrences of 'writeyourdockeridhere' with your docker id. Then run `sh docker-setup.sh`.
+3. `docker-compose build` (or with env parameters - see comments in Dockerfile under 'To get following env arguments filled')
 
-4. Verify that web app works. In browser, open: http://localhost:8888/. The webpage (of ***example Flask app***) should appear.
+4. `docker-compose up -d`
 
-5. Cleaning up. Open docker-cleanup.sh and replace all occurrences of 'writeyourdockeridhere' with your docker id. Then run `sh docker-cleanup.sh`. 
+5. Verify. In browser, open: http://localhost:8888/. The webpage (of ***example Flask app***) should appear.
+
+6. `docker-compose down`
 
 
 ### When using this project as a basis upon to build your own Flask web app
@@ -51,19 +52,17 @@ To verify that all works, minimal ***example Flask app*** (named BasicFlaskApp h
 
 3. `cd <your project>`
 
-4. Copy contents of cloned project to your project folder. Rename all occurrences of words 'BasicFlaskApp', 'basicflaskapp', 'bafla' with names that relate to/reflect your project. Introduce your code/edits. Also, update requirements.txt, if needed (you might require different set of Python packages in your app; example on how to update: `pip3 freeze > requirements.txt`).
+4. Copy contents of cloned project to your project folder. Rename all occurrences of words 'BasicFlaskApp', 'basicflaskapp', 'bafla' with names that relate to/reflect your project. Introduce your code/edits. For example, you might consider updating requirements.txt (you might require different set of Python packages in your app; example on how to update: `pip3 freeze > requirements.txt`), docker-compose.yml.
 
-5. Once ready, do the test run (create Docker image, create isolated env (network), run Docker container, verify that web app works):
+5. Once ready, do the test run (following commands will do: create of Docker image and isolated env (network), run of Docker container; verify that web app works; clean up - stop and remove container, remove network):
 
-   5.1. `docker build -t <yourdockerid>/<yourimagename>:<yourimageversion> .`
+   5.1. `docker-compose build` (or with env parameters - see comments in Dockerfile under 'To get following env arguments filled')
 
-   5.2. `docker network create <yourisolatednetworkname>`
+   5.2. `docker-compose up -d`
 
-   5.3. `docker run -d --name <nameyourcontainer> --net <yourisolatednetworkname> -p 8888:80 <yourdockerid>/<yourimagename>:<yourimageversion>`
-
-   5.4. In browser, open: http://localhost:8888/. The webpage (of your Flask web app) should appear.
+   5.3. In browser, open: http://localhost:8888/. The webpage (of your Flask web app) should appear.
    
-   5.5. Cleaning up. Stop and remove the container created in step 5.3. Remove the network created in step 5.2. 
+   5.4. `docker-compose down`
 
 
 ## Notes
@@ -71,5 +70,7 @@ To verify that all works, minimal ***example Flask app*** (named BasicFlaskApp h
 - Uses Ubuntu 18.04 as a base image.
 
 - Though not paramount, attempts to have as minimal image (size) as possible.
+
+- Dev env specifics: docker-compose 1.22.0,  Docker 18.06.1-ce
 
 - **Corresponding Docker images can be also pulled from Docker Hub (hub.docker.com):** `dm4rnde/flask-app-base-apache2-wsgi-py3-ubuntu`

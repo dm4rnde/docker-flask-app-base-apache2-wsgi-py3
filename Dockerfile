@@ -32,12 +32,6 @@ RUN rm -rf /var/www/BasicFlaskApp/BasicFlaskApp.conf
 RUN rm -rf /var/www/BasicFlaskApp/Dockerfile
 RUN rm -rf /var/www/BasicFlaskApp/requirements.txt
 
-# Once ServerName is known, need to remove following
-# line (it sets 'ServerName' directive globally)
-# and have ServerName in related conf file(s) (under 
-# sites-available, inside the VirtualHost section)
-RUN echo 'ServerName localhost' >> /etc/apache2/apache2.conf
- 
 RUN service apache2 start
 RUN sleep 10
 
@@ -53,17 +47,25 @@ EXPOSE 80 443
 
 RUN apt-get clean
 
-# To get following arguments filled
+# To get following env arguments filled
 # a) if you build an image manually then set the arguments
-#  example:
+#  example (1):
 #  docker build \
 #  --build-arg BUILD_DATE=`date -u +"%Y-%m-%dT%H:%M:%SZ"` \
 #  --build-arg VCS_REF=`git rev-parse --short HEAD` \
 #  --build-arg VERSION="latest" \
 #  -t dm4rnde/flask-app-base-apache2-wsgi-py3-ubuntu .
+#
+#  example (2) [use this option]:
+#  docker-compose build \
+#  --build-arg BUILD_DATE=`date -u +"%Y-%m-%dT%H:%M:%SZ"` \
+#  --build-arg VCS_REF=`git rev-parse --short HEAD` \
+#  --build-arg VERSION="latest"
+#
 # b) if you let Docker Hub registry do the autobuild 
 #  then specify build command with arguments in hooks/build
 #
+
 ARG BUILD_DATE
 ARG VCS_REF
 ARG VERSION

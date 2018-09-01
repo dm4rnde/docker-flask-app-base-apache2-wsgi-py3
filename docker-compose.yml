@@ -1,0 +1,21 @@
+version: "3.7"
+
+services:
+  bfa_web:
+    container_name: bfa_web 
+    networks:
+      - bfa_netw
+    #env_file: .env
+    #command: set_env.sh
+    build: 
+      context: .
+      args:
+        - BUILD_DATE=${{date -u +"%Y-%m-%dT%H:%M:%SZ"}}
+        - VCS_REF=${VCS_REF}
+        - VERSION=${VERSION}
+    ports:
+      - "8888:80"
+    restart: always
+
+networks:
+  bfa_netw:
