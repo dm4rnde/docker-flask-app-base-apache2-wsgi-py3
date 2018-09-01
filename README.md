@@ -30,6 +30,8 @@ This project could be used, for example:
 
 ### Test run
 
+To verify that all works.
+
 1. Clone the project.
 
 2. `cd docker-flask-app-base-apache2-wsgi-py3`
@@ -54,7 +56,7 @@ This project could be used, for example:
 
 4. Copy contents of cloned project to your project folder. Rename all occurrences of words 'BasicFlaskApp', 'basicflaskapp', 'bafla' with names that relate to/reflect your project. Introduce your code/edits. For example, you might consider updating requirements.txt (you might require different set of Python packages in your app; example on how to update: `pip3 freeze > requirements.txt`), docker-compose.yml.
 
-5. Once ready, do the test run (following will do: create of Docker image and isolated env (network), run of Docker container; verify that web app works; clean up - stop and remove container, remove network):
+5. Once ready, do the test run (following will: create Docker image, create isolated env (network), run Docker container; verify that web app works; clean up - stop and remove container, remove network):
 
    5.1. `docker-compose build` (or with env parameters - see comments in Dockerfile under 'To get following env arguments filled')
 
