@@ -12,7 +12,7 @@
 
 #experiment
 docker-compose \
--f docker-compose2_hub.docker.com.yml \
+-f docker-compose_hub.docker.com.yml \
 build \
 --build-arg BUILD_DATE=`date -u +"%Y-%m-%dT%H:%M:%SZ"` \
 --build-arg VCS_REF=`git rev-parse --short HEAD` \
