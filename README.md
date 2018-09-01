@@ -30,7 +30,7 @@ This project could be used, for example:
 
 ### Test run
 
-To verify that all works.
+To verify that it works.
 
 1. Clone the project.
 
