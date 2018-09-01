@@ -36,7 +36,7 @@ To verify that it works.
 
 2. `cd docker-flask-app-base-apache2-wsgi-py3`
 
-3. `docker-compose build` (or with env parameters - see comments in Dockerfile under 'To get following env arguments filled')
+3. `docker-compose build` (or with env variables - see comments in Dockerfile under 'To get following env arguments filled')
 
 4. `docker-compose up -d`
 
@@ -58,7 +58,7 @@ To verify that it works.
 
 5. Once ready, do the test run (following will: create Docker image, create isolated env (network), run Docker container; verify that web app works; clean up - stop and remove container, remove network):
 
-   5.1. `docker-compose build` (or with env parameters - see comments in Dockerfile under 'To get following env arguments filled')
+   5.1. `docker-compose build` (or with env variables - see comments in Dockerfile under 'To get following env arguments filled')
 
    5.2. `docker-compose up -d`
 
