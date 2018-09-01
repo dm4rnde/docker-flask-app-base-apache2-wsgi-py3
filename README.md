@@ -21,9 +21,9 @@ To verify that all works, minimal ***example Flask app*** (named BasicFlaskApp h
 
 This project could be used, for example:
 
-- As a base for (or for bootstrapping) Flask project that require similar characteristics (i.e., starting fresh project from beginning).
+- as a base for (or for bootstrapping) Flask project that require similar characteristics (i.e., starting fresh project from beginning);
 
-- As additional learning material when learning Docker.
+- as additional learning material when learning Docker.
 
 
 ## Running (from code)
