@@ -13,6 +13,7 @@ run.py
 # ignore docker related files
 .dockerignore
 docker-compose.yml
+docker-compose_hub.docker.com.yml
 hooks/
 note_build.txt
 
