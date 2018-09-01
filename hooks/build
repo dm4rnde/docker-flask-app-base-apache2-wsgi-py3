@@ -4,13 +4,13 @@
 # in order to do 'automatic build'
 # of corresponding image located there
 
+#w/o compose
 #docker build \
 #--build-arg BUILD_DATE=`date -u +"%Y-%m-%dT%H:%M:%SZ"` \
 #--build-arg VCS_REF=`git rev-parse --short HEAD` \
 #--build-arg VERSION=$DOCKER_TAG \
 #-t $IMAGE_NAME .
 
-#experiment
 docker-compose \
 -f docker-compose_hub.docker.com.yml \
 build \
