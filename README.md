@@ -16,7 +16,7 @@ To be more specific, resulting Docker container, created from this image, would 
 - Flask app (set up with wsgi and Apache; and running).
 
 
-To verify that all works, minimal ***example Flask app*** (named BasicFlaskApp here) is used. As it does not have much content it could be easily replaced with some other Flask app.
+To verify that all works, minimal ***example Flask app*** - named BasicFlaskApp here - is used. As ***example Flask app*** does not have much content it could be easily replaced with some other Flask app.
 
 
 This project could be used, for example:
