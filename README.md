@@ -75,4 +75,4 @@ To verify that it works.
 
 - Dev env specifics: docker-compose 1.22.0,  Docker 18.06.1-ce
 
-- **Corresponding Docker images are automatically built to public repository at Docker Hub (hub.docker.com):** https://hub.docker.com/r/dm4rnde/flask-app-base-apache2-wsgi-py3-ubuntu/
+- **Corresponding Docker images are automatically built to public repository at:** https://hub.docker.com/r/dm4rnde/flask-app-base-apache2-wsgi-py3-ubuntu/
