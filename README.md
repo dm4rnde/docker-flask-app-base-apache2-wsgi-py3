@@ -71,6 +71,9 @@ To verify that it works.
 
 - Uses Ubuntu 18.04 as a base image.
 
+- This solution does not set up virtual/isolated Python environment (i.e., such created by virtualenv) but uses global python/pip,
+because there is one running Flask app. To change this (for example, in order to have many Flask apps on same container or there is other situation that require different isolated Python environments), additional work is needed to set up virtual Python environments (need to do changes to Dockerfile).
+
 - Though not paramount, attempts to have as minimal image (size) as possible.
 
 - Dev env specifics: docker-compose 1.22.0,  Docker 18.06.1-ce
