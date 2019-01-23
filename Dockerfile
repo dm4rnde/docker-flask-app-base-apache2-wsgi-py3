@@ -18,7 +18,10 @@ RUN wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py' ; python get-pip.p
 # pip should be now pip3
 RUN pip --version ; rm -f get-pip.py
 
-RUN pip install --no-cache-dir -r /var/www/BasicFlaskApp/requirements.txt
+#temp looking for workaround
+#https://github.com/pypa/pip/issues/6158
+#RUN pip install --no-cache-dir -r /var/www/BasicFlaskApp/requirements.txt
+RUN pip install -r /var/www/BasicFlaskApp/requirements.txt
 
 RUN chown -R bflaskappuser:www-data /var/www/BasicFlaskApp
 
