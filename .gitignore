@@ -1,7 +1,6 @@
 # Project specific files #
 venv/
 
-
 # generated files
 bin/
 gen/
