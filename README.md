@@ -1,5 +1,8 @@
-
-[![](https://images.microbadger.com/badges/license/dm4rnde/flask-app-base-apache2-wsgi-py3-ubuntu.svg)](https://microbadger.com/images/dm4rnde/flask-app-base-apache2-wsgi-py3-ubuntu "Image License") [![](https://images.microbadger.com/badges/image/dm4rnde/flask-app-base-apache2-wsgi-py3-ubuntu.svg)](http://microbadger.com/images/dm4rnde/flask-app-base-apache2-wsgi-py3-ubuntu "Image Layers") [![](https://images.microbadger.com/badges/version/dm4rnde/flask-app-base-apache2-wsgi-py3-ubuntu.svg)](http://microbadger.com/images/dm4rnde/flask-app-base-apache2-wsgi-py3-ubuntu "Image Version") [![](https://images.microbadger.com/badges/commit/dm4rnde/flask-app-base-apache2-wsgi-py3-ubuntu.svg)](https://github.com/dm4rnde/docker-flask-app-base-apache2-wsgi-py3 "Image Commit") [![Docker Badge](https://img.shields.io/docker/build/dm4rnde/flask-app-base-apache2-wsgi-py3-ubuntu.svg)](https://hub.docker.com/r/dm4rnde/flask-app-base-apache2-wsgi-py3-ubuntu/builds/)
+```
+NOTE! This code is not actively managed and therefore will contain outdated components 
+(outdated code might refer to vulnerabilities!). For this reason please critically 
+review the code before using it.
+```
 
 # Flask(-Apache2-wsgi-Python3-Ubuntu) Docker image
 
@@ -78,4 +81,4 @@ because there is one running Flask app. To change this (for example, in order to
 
 - Dev env specifics: docker-compose 1.22.0,  Docker 18.06.1-ce
 
-- **Corresponding Docker images are automatically built to (and can be pulled from) public repository at:** https://hub.docker.com/r/dm4rnde/flask-app-base-apache2-wsgi-py3-ubuntu/
+- **Corresponding Docker image is located at (and can be pulled from):** https://hub.docker.com/r/dm4rnde/flask-app-base-apache2-wsgi-py3-ubuntu/
